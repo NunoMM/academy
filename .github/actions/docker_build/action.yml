@@ -1,0 +1,13 @@
+name: Build Docker Project
+description: 'Build a Docker image'
+
+runs:
+
+  using: 'composite'
+  steps:
+
+    - name: Build with docker
+      run: docker build . --file src/main/docker/Dockerfile.jvm --tag academy:$(date +%s)
+
+    - name: List docker images
+      run: docker images
