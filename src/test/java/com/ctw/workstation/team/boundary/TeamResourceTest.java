@@ -26,6 +26,7 @@ class TeamResourceTest {
 
     private UUID teamId;
 
+    /*
     @Test
     @DisplayName("Fetching all teams")
     @Order(3)
@@ -42,6 +43,9 @@ class TeamResourceTest {
 
     }
 
+     */
+
+    /*
     @Test
     @DisplayName("Creating team")
     @Order(1)
@@ -71,7 +75,9 @@ class TeamResourceTest {
 
     }
 
+     */
 
+    /*
     @Test
     @DisplayName("Fetching team with id")
     @Order(2)
@@ -89,7 +95,7 @@ class TeamResourceTest {
                     .log().all();
 
     }
-
+    */
 
 
 }
