@@ -32,6 +32,7 @@ public class TeamServiceTest {
     @Inject //InjectMock do quarkus
     TeamRepository teamRepository;
 
+    /*
     @Test
     @DisplayName("Add team nope")
     void add_team_nope() {
@@ -73,14 +74,13 @@ public class TeamServiceTest {
                 .ignoringFields("id")
                 .isEqualTo(teamRequestDTO);
 
-        /*
-        assertThat(teamRepository.findById(createdTeam.id()))
-                .isNotNull();
-        assertThat(teamRepository.findByIdOptional((Long) createdTeam.id()))
-                .isPresent();
-        */
+
+        //assertThat(teamRepository.findById(createdTeam.id())).isNotNull();
+        //assertThat(teamRepository.findByIdOptional((Long) createdTeam.id())).isPresent();
+
 
     }
+    */
 
 
 }

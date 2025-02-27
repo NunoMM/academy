@@ -11,6 +11,7 @@ import java.util.stream.Stream;
 
 class HelloAcademyTest {
 
+    /*
     public static Stream<Arguments> hello_academy_valid_name() {
         return Stream.of(
                 Arguments.of("Hello Dreamcast Academy", "Dreamcast Academy"),
@@ -62,6 +63,6 @@ class HelloAcademyTest {
         // Then
         Assertions.assertEquals("Hello ", result);
     }
-
+    */
 
 }

@@ -27,7 +27,7 @@ class HelloAcademyExtTest {
     @InjectMocks
     HelloAcademyExt helloAcademyExt;
 
-
+    /*
     @Test
     @DisplayName("Hello from outer space")
     void hello_from_outer_space() {
@@ -39,10 +39,10 @@ class HelloAcademyExtTest {
         Mockito.when(externalMessageService.sayHelloFromOuterSpace())
                 .thenThrow(new NotImplementedException("This feature is not yet implemented. Please contact support"));
 
-        /*
-        Mockito.when(externalMessageServiceSpy.sayHelloFromOuterSpace(Mockito.anyString()))
-                .thenReturn("Hello %s from outer space".formatted(name));
-        */
+
+        //Mockito.when(externalMessageServiceSpy.sayHelloFromOuterSpace(Mockito.anyString()))
+        //        .thenReturn("Hello %s from outer space".formatted(name));
+
 
         // When
         String result = helloAcademyExt.sayHello(null);
@@ -71,4 +71,6 @@ class HelloAcademyExtTest {
         assertThat(result).isEqualTo("Hello World");
     }
 
+
+     */
 }

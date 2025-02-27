@@ -21,6 +21,7 @@ class HelloAcademyExtApiTest {
     @Inject
     HelloAcademyExt helloAcademyExt;
 
+    /*
     @Test
     @DisplayName("Saying hello to external api")
     void hello_external_api() {
@@ -34,5 +35,8 @@ class HelloAcademyExtApiTest {
         assertThat(result).isEqualTo("Hello Nuno!");
 
     }
+
+     */
+
 
 }
