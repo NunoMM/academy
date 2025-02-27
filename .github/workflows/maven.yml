@@ -24,20 +24,12 @@ jobs:
     - uses: actions/checkout@v4
     - uses: NunoMM/academy/.github/actions/maven_build@main
     - uses: NunoMM/academy/.github/actions/docker_build@main
+      with:
+        path_dockerfile: src/main/docker/Dockerfile.jvm
+        image_name: academy
+        tag_name: v1
 
-#    name: Build
-#    description: Build application with Maven and create a new Docker image
-#    inputs:
-#      dockerfile_path:
-#        description: "Path to the Dockerfile"
-#        required: false
-#        default: "Dockerfile"
-#    runs:
-#      using: composite
-#      steps:
-#        - run: |
-#            echo "Update me with the necessary steps to build the application"
-#          shell: bash
+
 
 
 
