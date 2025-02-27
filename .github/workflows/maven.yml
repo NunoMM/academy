@@ -26,8 +26,12 @@ jobs:
     - uses: NunoMM/academy/.github/actions/docker_build@main
       with:
         path_dockerfile: src/main/docker/Dockerfile.jvm
-        image_name: academy
+        image_name: nunomarques300/academy
         tag_name: v1
+    - uses: NunoMM/academy/.github/actions/docker_push@main
+      with:
+        username: ${{ vars.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
 
 
 
