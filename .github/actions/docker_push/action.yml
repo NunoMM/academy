@@ -23,3 +23,4 @@ runs:
 
     - name: Push Docker image
       run: docker push ${{ ENV.DOCKER_IMAGE_NAME}}
+      shell: bash
