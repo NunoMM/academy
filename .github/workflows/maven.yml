@@ -33,5 +33,8 @@ jobs:
       run: docker build . --file src/main/docker/Dockerfile.jvm --tag academy:$(date +%s)
     - name: List docker images
       run: docker images
+    - name: Inspect image
+      run: docker image inspect academy:latest
+
 
 
