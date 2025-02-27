@@ -8,6 +8,8 @@ runs:
 
     - name: Build with docker
       run: docker build . --file src/main/docker/Dockerfile.jvm --tag academy:$(date +%s)
+      shell: ubuntu-latest
 
     - name: List docker images
       run: docker images
+      shell: ubuntu-latest
